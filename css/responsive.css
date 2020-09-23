@@ -1,0 +1,655 @@
+/**************** Home Page media Query ****************/
+
+@media (min-width:769px) and (max-width:1200px){
+    #headers{
+        height: 72px;
+    }
+    .logo{
+        width: 30%;
+        padding-left: 11%;
+    }
+    /* .logo img{
+        height: 50px;
+        width:120px;
+    } */
+    .logo h3{
+        line-height: 0.7;
+    }
+    #nav{
+        width: 65%;
+    }
+    nav ul{
+        padding-right: 14%;
+    }
+}
+
+@media (min-width:769px) and (max-width:1000px){
+     .logo img{
+        height: 53px;
+        width:143px;
+    } 
+    .logo h3{
+        font-size: 1.6rem;
+    }
+    nav ul{
+        padding-right: 0%;
+    }
+    nav ul li a{
+        padding: 0.4rem;
+        padding-bottom: 0.1rem;
+        font-size: 1.6rem;
+    }
+     /* Special section */
+
+     .special{
+        margin-top: 1.5rem;
+    }
+    .special h2{
+        font-size: 2rem;
+    }
+    .special-box{
+        width: 27%;
+        margin: 1rem;
+    }
+    .special h3{
+        font-size: 1.5rem;  
+        margin-bottom: 0;
+    }
+    .special h3 span{
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+    .special p{
+        font-size: 0.9rem;
+    }
+    
+    /* About */
+    #about{
+        height: 50vh;
+    }    
+    #about .about-content{
+        margin-right: 4%;
+    }
+    #about .about-content h3{
+        width: 75%;
+        font-size: 2.3rem;
+    }
+    #about .about-content p{
+        width: 60%;
+    }
+    
+    #about .about-content #about-heading{
+        margin-top: -2%;
+    }
+    #about .about-img{
+        width: 30%;
+        height:41vh ;
+        margin-right:7%;
+        box-shadow: 22px 22px #d65106;
+    }
+    /* Footer */
+    .foot .foot-content{
+        padding: 2% 2%;
+    }
+    
+    .foot .foot-content .foot-box h3{
+        font-size: 1.5rem;
+    }
+    .foot .foot-content .foot-box span{
+        font-size: 0.9rem;
+    }
+    .foot-box #connect-bg{
+        padding-top: 0.3rem;
+    }
+    .foot-content .foot-hr{
+        width: 93%;
+    }
+    .foot-box #connect-bg a{
+        padding: 0.3rem;
+        font-size: 1.1rem;
+    }
+    #footer-copyright{
+        font-size: 1rem;
+    } 
+}
+
+
+
+@media  (max-width:768px){
+    /***************** Navigation ********************/
+
+    #headers{
+        flex-direction: column; 
+        background-color: #000;
+    }
+    .logo{
+        width: 100%;
+        padding-left: 6%;
+        display: flex;
+        flex-direction: row;
+    }
+    .logo .inner-logo-section{
+        width: 80%;
+    }
+     .logo img{
+        height: 56px;
+        width:87px;
+    } 
+    .logo #burger{
+        width: 10%;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+    .logo #burger .line{
+        width: 50px;
+        height: 4px;
+        margin-bottom: 0.6rem;
+        background-color: #fff; 
+    }
+    .logo h3{
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+    #nav{
+        width: 100%;
+    }
+    .display-none{
+        opacity: 0;
+        display: none;    
+    }
+    .cancel-nav{
+        width: 25px;
+        font-size: 2rem;
+        position: absolute;
+        top: 28px;
+        right: 44px;
+        cursor: pointer;
+        display: none;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0.4rem;
+        background-color: #000;
+    }
+    /* nav ul li {
+        border-bottom: 3px solid rgba(102, 94, 94, 0.425);  
+    } */
+    
+    nav ul li a{
+        font-size: 1.3rem;
+        transition: all 0.6s ease-out;
+    }
+    nav ul li a:hover{
+        margin-left: 30px;
+    }
+
+    /* Slider */
+    #order-btn{
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    /* .slider-title .col-12 .line-order-btn{
+        display: none;
+    } */
+    .slider-img{
+        height: 59vh;
+        opacity: 0.8;
+    }
+    .slider-title{
+        position: relative;
+        top: -40px;
+    }
+    .slider-title .main-title{
+        font-size: 2.3rem;
+        margin-top: 0px;
+    }
+    
+    /************************ Special section ***************************/
+    .special{
+        margin-top: 1.5rem;
+    }
+    .special h2{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .special-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .special-box{
+        box-sizing: border-box;
+        width: 70%;
+        margin-bottom: 1.4rem;
+    }
+    .special h3{
+        padding-left: 0.5rem;  
+        font-size: 1.4rem;  
+    }
+    .special h3 span{
+        font-size: 1.3rem;
+    }
+    .special p{
+        padding-left: 0.5rem;    
+    }
+    
+    /********************* About *************************/
+    #about{
+        width: 100%;
+        height:100%;
+        margin-top: 0;
+        display: block;
+        background-image: none;
+    }    
+    #about .about-content{
+        background: url('../images/about-bg3.jpg') no-repeat center center/cover; 
+        opacity: 0.7;
+        align-items: center;
+        width: 100%;
+        height: 60%;
+        margin-right: 0;
+    }
+    #about .about-content h3{
+        width: 63%;
+        color: #04771e;
+        font-family: 'Caveat', cursive;
+        font-size: 2rem;
+        text-align: end;
+    }
+    #about .about-content p{
+        width: 60%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: end;
+        font-size: 1rem;
+    }
+    
+    #about .about-content #about-heading{
+        margin-top: 5%;
+        
+    }
+    #about .about-img{
+        display: none;
+    }
+    /***************** Foot ***********************/
+
+    .foot .foot-content{
+        flex-direction: column;
+        padding: 2rem 0;
+        margin-top: 0;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .foot .foot-content .foot-box{
+        width: 60%;
+        margin-left: 18%;
+    }
+    .foot .foot-content .foot-box h3{
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+    .foot .foot-content .foot-box span{
+        font-size: 0,9rem;
+    }
+    .foot-box #connect-bg{
+        padding-top: 0.4rem;
+    }
+    .foot-content .foot-hr{
+        width: 70%;
+    }
+    .foot-box #connect-bg a{
+        padding: 0.5rem;
+        font-size: 1rem;  
+    }
+    #footer-copyright{
+        text-align: center;
+        padding: 0 2%;
+        padding-top: 1%;
+        padding-bottom: 2% ;
+        font-size: 1rem;
+    }  
+}
+
+
+/*********************************
+               Menu Page Media Queries 
+*************************************************/
+@media (min-width:769px) and (max-width:1200px){
+    /* Menu heading */
+    #menu-page-head-bg #menu-page-div h1{
+        height: 50px;
+        font-size: 1.9rem;
+    }
+    
+    /* Breakfast section */
+    .breakfast-section{
+        width: 86%;
+        margin: 3rem 7%;
+    }
+    .breakfast-section h1{
+        font-size: 1.9rem;
+    }
+    .breakfast .breakfast-img{
+        width: 46%;
+    }
+    .breakfast .breakfast-content .breakfast-box{
+        height: 23%;
+    }
+    .breakfast .breakfast-content .breakfast-box .breakfast-dish-content{
+        padding-left: 0.4rem;
+    }
+    .breakfast-box .breakfast-dish-content h2{
+        font-size: 1.4rem;
+    }
+    .breakfast-box .breakfast-dish-content h2 span{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:768px){
+    /* Menu heading */
+    #menu-page-head-bg #menu-page-div {
+        height: 23%;
+        top: 120px;
+    }
+    #menu-page-head-bg #menu-page-div h1{
+        height: 43px;
+        width: 90%;
+        font-size: 1.65rem;
+    }   
+
+    /* Breakfast section */
+
+    .breakfast-section{
+        width: 86%;
+        height: 83.6vh;
+        margin: 3rem 7%;
+    }
+    .breakfast-section h1{
+        font-size: 1.65rem;
+    }
+    .breakfast .breakfast-img{
+        display: none;
+    }
+    .breakfast .breakfast-content{
+        width: 100%;
+        height: 85vh;
+    }
+    .breakfast .breakfast-content .breakfast-box{
+        height: 20%;
+    }
+    .breakfast .breakfast-content .breakfast-box .breakfast-dish-content{
+        padding-left: 0.5rem;
+    }
+    .breakfast-box .breakfast-dish-content h2{
+        font-size: 1.2rem;
+    }
+    .breakfast-box .breakfast-dish-content h2 span{
+        font-size: 1.15rem;
+    }
+    .breakfast-box .breakfast-dish-content p{
+        font-size: 0.85rem;
+    }
+    .breakfast-box .breakfast-dish-content > span.item-code{  
+        font-size: 0.8rem;
+    }
+}
+
+/**************** Media query for contact page ********************/
+
+@media (min-width:769px) and (max-width:1000px){
+    /* contact page heading */
+    #contact-page-head-bg #contact-page-div h1{
+        height: 50px;
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width:768px){
+    /* Contact page heading */
+    #contact-page-head-bg #contact-page-div {
+        height: 23%;
+        top: 120px;
+    }
+    #contact-page-head-bg #contact-page-div h1{
+        height: 43px;
+        width: 90%;
+        font-size: 1.65rem;
+    }       
+    /* Contact form */
+    #contact-bg{
+        height: 78.5vh;
+    }
+    #contact-bg #contact-form{
+        width: 380px;
+    }
+    #contact-form h5{
+        font-size: 0.85rem;
+    }
+    #contact-form #contact-submit-btn{
+        font-size: 1rem;
+    }
+}
+
+
+/***************** Order Page Media Query  ****************/
+
+    @media (min-width:1280px) and (max-width:1380px){   
+        #order-menu{
+            width: 50%;
+            height: 700px;
+            margin-left: 6%;
+        }
+        
+        #order-menu > h2{
+            width: 30%;
+        }
+
+        #order-item-list-box{
+            padding-left: 6%;
+        }
+       
+        #order-item-list-box .order-item-list span.order-item-code{
+            margin-right: 1.5rem;
+        }
+       
+         /* Order cart section */
+        #order-cart{
+            width: 24%;
+            min-height: 450px;
+        }
+    }
+
+@media(min-width:1000px) and (max-width:1279px){
+    /* Order section */
+   
+    #order-menu{
+        width: 51%;
+        height: 700px;
+        margin-left: 8%;
+    }
+    
+    #order-menu > h2{
+        width: 36%;
+    }
+
+    #order-item-list-box{
+        padding-left: 5%;
+    }
+    #order-item-list-box .order-item-list span.order-item-code{
+        font-size: 1.45rem;
+        margin-right: 1.1rem;
+    }
+    #order-item-list-box .order-item-list h4.order-item-name{
+        font-size: 1.25rem;
+        margin-right: 0.1rem;
+    }
+    #order-item-list-box .order-item-list span.order-item-price{
+        font-size: 1.25rem;
+    }
+     /* Order cart section */
+    #order-cart{
+        width: 26%;
+        min-height: 450px;
+        margin-left: 5%;
+    } 
+    #order-cart > h2{
+        font-size: 1.45rem;
+    }
+    #pay-charge h4#bill-pay{
+        font-size: 1.25rem;
+    }
+}
+
+@media(min-width:769px) and (max-width:999px){
+      /* Order page heading */
+    #order-page-head-bg #order-page-div {
+        height: 27%;
+        top: 120px;
+    }
+    #order-page-head-bg #order-page-div h1{
+        height: 43px;
+        width: 90%;
+        font-size: 1.85rem;
+    }     
+     /* Order section */
+    #order-menu{
+        width: 60%;
+        margin-left: 3%;
+    }
+    #order-menu > h2{
+        width: 39%;
+    }
+    #order-item-list-box{
+        padding-left: 2%;
+    }
+    #order-item-list-box .order-item-list span.order-item-code{
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-right: 0.4rem;
+    }
+    #order-item-list-box .order-item-list h4.order-item-name{
+        font-size: 1.2rem;
+        margin-right: 0.4rem;
+    }
+    #order-item-list-box .order-item-list .dotted-space{
+        margin-right: 0.4rem;
+    }
+    #order-item-list-box .order-item-list span.order-item-price{
+        font-size: 1.2rem;
+        margin-left: 0.4rem;
+    }
+    #order-item-list-box .order-item-list button.order-item-addbtn{
+        margin-left: 0.4rem;
+    }
+    
+    /* Order cart section */
+    #order-cart{
+        width: 28%;
+        margin-left: 5%;
+        margin-right: 2%;
+    } 
+    #order-cart > h2{
+        width: 70%;
+    }
+    .cart-item-container .cart-item .cart-item-code{
+        font-size: 1.1rem;
+    }
+    .cart-item-container .cart-item h5.cart-item-name{
+        font-size: 1rem;
+    }
+    .cart-item-container .cart-item .cart-item-price{
+        font-size: 1.15rem;
+    }
+
+    #pay-charge h4#bill-pay{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:768px){
+    /* Order page head */
+    #order-page-head-bg #order-page-div {
+        height: 23%;
+        top: 120px;
+    }
+    #order-page-head-bg #order-page-div h1{
+        height: 43px;
+        width: 90%;
+        font-size: 1.65rem;
+    }     
+    /* Order section */
+    #order{
+        flex-direction: column;
+    }
+    #order-menu{
+        width: 96%;
+        height: 570px;
+        margin-top: 2rem;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #order-menu > h2{
+        width: 60%;
+        font-size: 1.45rem;
+    }
+    #order-item-list-box{
+        padding-left: 1%;
+    }
+    #order-item-list-box .order-item-list span.order-item-code{
+        font-size: 1.15rem;
+        margin-right: 0.4rem;
+    }
+    #order-item-list-box .order-item-list h4.order-item-name{
+        font-size: 1.1rem;
+        margin-right: 0.1rem;
+    }
+    #order-item-list-box .order-item-list .dotted-space{
+        display: none;
+    }
+    #order-item-list-box .order-item-list span.order-item-price{
+        font-size: 1.1rem;
+        margin-left: 0.3rem;
+    }
+    #order-item-list-box .order-item-list button.order-item-addbtn{
+        float: right;
+        margin-right: 0.4rem;
+        margin-left: 0rem;
+    }
+    
+    /* Order cart section */
+    #order-cart{
+        width: 96%;
+        min-height: 450px;
+        margin-top: 3rem;
+        margin-left: 2%;
+        margin-right: 2%;
+    } 
+    #order-cart > h2{
+        padding-bottom: 0.4rem;
+        font-size: 1.35rem;
+    }
+    .cart-item-container .cart-item .cart-item-code{
+        font-size: 1.1rem;
+        padding-right: 0.5rem;
+    }
+    .cart-item-container .cart-item h5.cart-item-name{
+        font-size: 1rem;
+    }
+    .cart-item-container .cart-item .cart-item-price{
+        font-size: 1.15rem;
+        font-weight: 600;
+    }
+    .cart-item-container .cart-item .remove-cart-item{
+        font-size: 1rem;
+        padding-bottom: 0.2rem;
+    }
+    #pay-charge h4#bill-pay{
+        font-size: 1.15rem;
+    }
+    #pay-charge h3#main-pay-label{
+        font-size: 1.3rem;
+    } 
+}
